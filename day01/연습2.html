@@ -7,14 +7,13 @@
     <link rel="stylesheet" href="../reset.css">
     <style>
         header {
-            margin-left: 80px;
-            margin-right: 80px;
-
             border: 1px solid #222;
             display: flex;
             justify-content: space-between;
+
+            margin-bottom: 12px;
         }
-        .WEB {
+        h1 {
             display: flex;
             justify-content: center;
             align-items: center ;
@@ -27,41 +26,99 @@
             background-color: yellow;
         }
 
-        .head-right {
-            height: 150px;
-            width: 300px;
-            background-color: ivory;
+        .article {
+            line-height: 30px;
+            width: 65%;
+
+            padding: 20px;
+            margin-bottom: 12px;
+            border: 1px solid #222;
         }
 
         h2 {
             font-size: 30px;
             font-weight: bold;
+            /* background-color: bisque; */
+        }
+        .article > h2 {
             background-color: bisque;
         }
 
-        .article {
-            
+        .menu-container {
+            height: 150px;
+            width: 300px;
+            background-color: lightblue;
+
+            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            align-items: end;
         }
 
+        .menu-container1 {
+            padding: 2px;
+            border: 1px;
+            background-color: orange;
+
+            display: flex;
+            align-items: end;
+        }
+
+        .menu-container2 {
+            border: 1px;
+            background-color: yellow;
+
+        }
+        aside {
+            line-height: 30px;
+            padding: 20px;
+
+            width: 20%;
+            border: 1px solid #222;
+        }
+
+        aside > input {
+            margin-bottom: 10px;
+        }
+
+        .aside-iner-box {
+            background-color: gray;
+        }
+
+        .aside-iner-box > h3 {
+            font-weight: bold;
+            font-size: 25px;
+        }
+
+
+        footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            height: 40px;
+            
+            background-color: bisque;
+            font-size: 20px;
+            border: 1px solid #222;
+        }
 
     </style>
 </head>
 <body>
     <div>
         <header>
-            <div class="WEB">WEB-logo</div>
-            <div class="head-right">
-                <div class="menu-1">
-                    <div>menu</div>
-                    <div>menu</div>
-                    <div>menu</div>
-                </div>
-
-                <div class="menu-2">
-                    <div>menu</div>
-                    <div>menu</div>
-                    <div>menu</div>
-                </div>
+            <h1>WEB-logo</h1>
+            <ul class="menu-container">
+                <li class="menu-container1">menu</li>
+                <li class="menu-container1">menu</li>
+                <li class="menu-container1">menu</li>
+            </ul>
+            <ul class="menu-container">
+                <li class="menu-container2">menu</li>
+                <li class="menu-container2">menu</li>
+                <li class="menu-container2">menu</li>
+            </ul>
                 
             </div>
         </header>
@@ -78,15 +135,21 @@
         <div class="article">
             <h2>Main Article</h2>
             <div >Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus distinctio repellat tempore totam ad minima quaerat, quidem, facilis quae quis odio iste officia aliquid temporibus molestiae similique eum debitis rerum.</div>
+
         </div>
         <aside>
-            <div class="right-title">right aside
-                <div>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt, aspernatur! Nesciunt fugit dignissimos magnam explicabo nam ipsa ducimus, fugiat vitae. Ipsum quam similique, repellendus aliquam libero fugit fugiat minus et.</div>
-                <div></div>
-                <button>millto</button>
+            <h2>Right aside</h2>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem rem vero cupiditate fugit eaque, fugiat, aliquid asperiores pariatur nihil ab neque. Culpa voluptatibus ullam ipsum ea voluptas, asperiores ad est.</p>
+            <input type="text" name="" id="">
+            <button>mailto</button>
+            <div class="aside-iner-box">
+                <h3>TEXT</h3>
+                <p>banner</p>
             </div>
         </aside>
     </div>
-    <footer>footer</footer>
+    <footer>
+        &copy;HTML5 COPYRIGHT
+    </footer>
 </body>
 </html>
