@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .video-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+    <!-- <audio controls autoplay src="../day03/source/Zula - Mini Vandals.mp3"></audio> -->
+    <!-- audio 태그 : 오디오를 넣기 위한 태그 -->
+    <!-- 
+        controls : 오디오를 컨트롤 할 수 있는 UI 제공
+        autoplay : 자동재생
+        muted : 음소거
+        loop : 반복
+        preload : 미리 다운로드 해 준비하기
+     -->
+
+     <!-- controls 있어야만 화면에 나타남 -->
+     <!-- autoplay 작동 안함 -->
+     <!-- 실질적으로 controls는 필수속성, 선택은 loop정도 -->
+    <div class="video-container">
+        <video src ="../day03/source/korea_video.mp4" autoplay muted loop></video>
+    </div>
+    <!-- 
+        audio태그와 같은 속성들을 공유함
+        autoplay + muted 조합으로
+        영상을 움짤처럼 넣을 수 있다.
+     -->
+</body>
+</html>
