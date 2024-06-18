@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+
+        body {
+            height: 5000px;
+        }
+
+        header {
+            height: 80px;
+            background-color: rgb(185, 238, 255);
+            padding: 0 32px;
+
+            width: 100%;
+            box-sizing: border-box;
+
+            /* fixed기능은 브라우저를 기준으로, 내가 보는 view를 기준으로 고정이 된다. */
+            position: fixed;
+            top: 0;
+            /* bottom: 0; */
+        }
+
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100%;
+        }
+        
+        nav {
+            background-color: rgb(252, 115, 115);
+            height: 16px;
+            width: 800px;
+        }
+        
+        .icon {
+            background-color: rgb(252, 115, 115);
+            height: 48px;
+            width: 200px;
+        }
+
+        /* 헤더 여백 만들어주는 공식. margin-top은 구조가 복잡하면 문제가 생길 위험이 있다. */
+        .container {
+            height: 500px;
+        
+            padding-top: 80px;
+            background-color: pink;
+        }
+        </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <h1>logo</h1>
+            <nav>
+                
+            </nav>
+            <div class="icon">
+                
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia cumque omnis error repudiandae nemo fugit pariatur. Ad quia minima, quos laudantium culpa deserunt id sapiente at laborum consectetur nesciunt labore?
+    </div>
+</body>
+
+</html>
