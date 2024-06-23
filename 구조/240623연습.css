@@ -1,0 +1,115 @@
+header {
+    width: 1000px;
+    height: 100px;
+    border: 1px solid #222;
+
+    display: flex;
+    justify-content: space-between;
+
+    margin: 0 auto;
+    margin-bottom: 8px;
+    box-sizing: border-box;
+}
+
+h1 {
+    width: 200px;
+    font-size: 32px;
+    font-weight: bold;
+
+    background-color: lightblue;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+
+    background-color: ivory;
+}
+
+.menu-container {
+    display: flex;
+    background-color: lightgray;
+}
+
+.menu-container:last-child {
+    background-color: lightgreen;
+}
+
+.menu-content > a {
+    display: block;
+    padding: 8px 24px;
+    text-decoration: none;
+    color: #222
+}
+
+.wrap {
+    width: 1000px;
+    display: flex;
+    margin: 0 auto;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.wrap p {
+    line-height: 150%;
+}
+
+article {
+    padding: 16px;
+    border: 1px solid #222;
+}
+
+article > h2 {
+    background-color: lightblue;
+}
+
+.wrap h2 {
+    padding: 8px;
+    font-size: 24px;
+    font-weight: bold;
+
+}
+
+aside {
+    border: 1px solid #222;
+    padding: 16px;
+    width: 320px;
+    flex-shrink: 0;
+}
+
+.aside-inner-box > h3 {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.aisde > p { 
+    line-height: 30px;
+}
+
+.aside-inner-box {
+    background-color: gray;
+    margin-top: 8px;
+}
+
+footer {
+    width: 1000px;
+    background-color: aliceblue;
+    border: 1px solid #222;
+    padding: 12px;
+
+    text-align: center;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
