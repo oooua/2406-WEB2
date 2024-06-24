@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0624구조연습</title>
+    <link rel="stylesheet" href="../reset.css">
+
+    <style>
+        body {
+            background-color: lightgray;
+        }
+        header {
+            color: white;
+            width: 1000px;
+            height: 100px;
+            margin: 0 auto;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header > h1 {
+            font-size: 40px;
+            font-weight: bold;
+        }
+         .nav-container {
+            width: 1000px;
+            height: 80px;
+            background-color: rgb(223, 150, 205);
+            margin: 0 auto;
+            margin-bottom: 12px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+         }
+
+         .nav-content-box {
+            justify-content: space-between;
+            display: flex;
+         }
+
+         .nav-content > a {
+            padding: 52px;
+            font-weight: bolder;
+
+            justify-content: space-between;
+            text-decoration: none;
+            display: block;
+            color: #222;
+         }
+
+         .serch-box {
+            width: 300px;
+         }
+
+         input {
+            height: 24px;
+         }
+
+         button {
+            width: 56px;
+            height: 30px;
+            background-color: lightskyblue;
+            color: white;
+         }
+
+         h2 {
+            font-size: 28px;
+            font-weight: bold;
+            padding: 24px 0px;
+         }
+
+         main {
+            width: 1000px;
+            display: flex;
+            justify-content: center;
+            margin-bottom: 12px;
+            margin: 0 auto;
+            gap: 12px;
+
+         }
+
+         .main-container {
+            padding: 12px 12px;
+            margin-bottom: 12px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+         }
+
+         .main-article > h2 {
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+         }
+
+         .article {
+            line-height: 150%;
+         }
+
+         .article p {
+            padding-bottom: 16px;
+         }
+
+         .right-aside {
+            background-color: rgb(223, 150, 205);
+            display: flex;
+            flex-direction: column;
+            padding: 12px;
+            width: 250px;
+            margin-bottom: 12px;
+         }
+
+         .aside-container > a {
+            line-height: 200%;
+            color: blue;
+         }
+
+         footer {
+            background-color: white;
+            width: 1000px;
+            height: 70px;
+            font-size: 20px;
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            padding: 12px;
+            box-sizing: border-box;
+
+            margin: 0 auto;
+         }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Header</h1>
+    </header>
+    <nav class="nav-container">
+        <ul class="nav-content-box">
+            <li class="nav-content">
+                <a href="">HOME</a></li>
+            <li class="nav-content">
+                <a href="">OUR TEAM</a></li>
+            <li class="nav-content">
+                <a href="">PROJECT</a></li>
+            <li class="nav-content">
+                <a href="">CONTENT</a></li>
+        </ul>
+        <div class="serch-box">
+            <input type="text">
+            <button>GO!</button>
+        </div>
+    </nav>
+    <main>
+        <section class="main-container">
+            <div class="main-article">
+                <h2>Article Heading</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil enim hic fugit accusamus, commodi voluptatem perferendis! Nostrum repellat architecto</p>
+            </div>
+            <div class="article">
+                <h2>subsection</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil enim hic fugit accusamus, commodi voluptatem perferendis! Nostrum repellat architecto</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil enim hic fugit accusamus, commodi voluptatem perferendis! Nostrum repellat architecto</p>
+            </div>
+            <div class="article">
+                <h2>Another subsection</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil enim hic fugit accusamus, commodi voluptatem perferendis! Nostrum repellat architecto</p>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nihil enim hic fugit accusamus, commodi voluptatem perferendis! Nostrum repellat architecto</p>
+            </div>
+        </section>
+        <aside class="right-aside">
+            <h2>Related</h2>
+            <ri>
+                <li class="aside-container">
+                    <a href="">
+                        Oh I do like to be beside the
+                    </a>
+                </li>
+                <li class="aside-container">
+                    <a href="">
+                        Oh I do like to be beside the sea
+                    </a>
+                </li>
+                <li class="aside-container">
+                    <a href="">
+                        Although in the North of England
+                    </a>
+                </li>
+                <li class="aside-container">
+                    <a href="">
+                        It never stops raining
+                    </a>
+                </li>
+                <li class="aside-container">
+                    <a href="">
+                        Oh well...
+                    </a>
+                </li>
+            </ri>
+        </aside>
+    </main>
+    <footer>&copy;Copyright 2050 by nobody. All rights reversed</footer>
+</body>
+</html>
