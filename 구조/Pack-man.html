@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        body {
+            background-color: #000000;
+        }
+
+        .pack {
+            width: 100px;
+            height: 100px;
+
+            animation: moving infinite alternate linear 1s;
+        }
+
+        .m {
+            display: block;
+            background-color: yellow;
+            width: 100px;
+            height: 50px;
+        }
+
+        .up-m {
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+
+            transform-origin: bottom;
+
+            animation: bite-down infinite alternate linear 0.25s;
+        }
+
+        .eye {
+            width: 8px;
+            height: 8px;
+            background-color: #000000;
+
+            position: absolute;
+            margin: 20px 70px;
+            border-radius: 50%;
+
+        }
+        
+        .bot-m {
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+
+            transform-origin: top;
+
+            animation: bite-up infinite alternate linear 0.25s;
+        }
+        
+        @keyframes bite-up {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(35deg);
+            }
+        }
+
+        @keyframes bite-down {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(-35deg);
+            }
+        }
+
+        @keyframes moving {
+            from {
+                transform: translate(0);
+                /* transform: rotate(0deg); */
+            }
+
+            /* 5% {
+                transform: rotate(45deg);
+            } */
+
+            to {
+                transform: translate(400px);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="pack">
+        <div class="rotate">
+            <span class="m up-m">
+                <div class="eye"></div>
+            </span>
+        </div>
+        <span class="m bot-m"></span>
+    </div>
+</body>
+</html>
