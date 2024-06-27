@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: #000;
+            position: relative;
+        }
+
+        .animaition-container {
+            position: absolute;
+            width: 40px;
+            aspect-ratio: 1;
+            /* background-color: white; */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .roading {
+            width: 100%;
+            height: 100%;
+            border: 8px solid white;
+            border-top-color: red;
+            box-sizing: border-box;
+            border-radius: 50%;
+
+            animation: roading 1s infinite;
+        }
+
+        @keyframes roading {
+            from {
+                transform: rotate(0deg);
+            }
+
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        .re-roading-container {
+            position: absolute;
+            width: 100px;
+            aspect-ratio: 1;
+            /* background-color: white; */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+
+        .re-roading {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: white;
+
+            opacity: 1;
+            transform:scale(0);
+
+            animation: re-roading 2s infinite;
+        }
+
+        .re-roading:nth-child(2){
+            animation-delay: 0.2s;
+        }
+        .re-roading:nth-child(3){
+            animation-delay: 0.4s;
+        }
+
+        @keyframes re-roading {
+            from {
+                opacity: 0.8;
+                transform: scale(0);
+            }
+
+            50% {
+                opacity: 0;
+                transform: scale(1);
+            }
+
+            to {
+                opacity: 0;
+                transform: scale(1);
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="animaition-container">
+            <div class="roading"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="re-roading-container">
+            <div class="re-roading"></div>
+            <div class="re-roading"></div>
+            <div class="re-roading"></div>
+        </div>
+    </div>
+</body>
+</html>

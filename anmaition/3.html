@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .container {
+            width: 400px;
+            height: 400px;
+            background-color: #000;
+
+            display: flex;
+            justify-items: center;
+            align-items: center;
+        }
+
+        .box {
+
+            justify-content: center;
+            align-items: center;
+            display: flex;
+            /* position: absolute; */
+            width: 50px;
+            aspect-ratio: 1;
+            background-color: white;
+            border-radius: 50%;
+            animation: all 1s;
+        }
+
+        .box-1 {
+
+            /* transform: translate(-50%,-50%); */
+            /* transform: scale(3); */
+            animation: box-1 1s infinite ;
+        }
+        .box-2 {
+            animation: box-1 1s infinite ;
+            animation-delay: 0.3;
+
+        }
+        .box-3 {
+            animation: box-1 1s infinite ;
+            animation-delay: 0.6;
+        }
+
+        @keyframes all {
+            from {
+                transform: scale(1,1);
+            }
+
+            to {
+                transform: scale(3,3);
+            }
+        }
+
+        @keyframes box-1 {
+            from {
+                opacity: 0.1;
+            }
+
+            to {
+                transform: scale(3,3);
+                opacity: 0.6;
+            }
+        }
+        @keyframes box-2 {
+            from {
+                opacity: 0.1;
+            }
+
+            to {
+                opacity: 0.6;
+            }
+        }
+        @keyframes box-3 {
+            from {
+                opacity: 0.1;
+            }
+
+            to {
+                opacity: 0.6;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box box-1">
+            <div class="box box-2">
+                <div class="box box-3"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
