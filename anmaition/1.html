@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Home work</title>
     <link rel="stylesheet" href="../reset.css">
     <style>
         .container {
@@ -91,6 +91,110 @@
             }
         }
 
+        .one {
+            background-color: red;
+            position: absolute;
+            width: 100px;
+            aspect-ratio: 1;
+            top: 35%;
+            left: 15%;
+
+            width: 50px;
+            height: 200px;
+            transform: translateY(-50px);
+
+            animation: one 12s infinite;
+        }
+
+        @keyframes one {
+            from {
+                transform:translate(0px, 0px);
+            }
+
+            17% {
+                transform: translate(0px, 200px);
+            }
+
+            90% {
+                transform: translate(0px, 200px);
+            }
+
+            to {
+                transform:translate(0px, 0px);
+            }
+        }
+
+        .m-container {
+            position: absolute;
+            width: 40px;
+            aspect-ratio: 1;
+            /* background-color: white; */
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+
+            opacity: 1;
+        }
+
+        .m-body {
+            height: 100px;
+            width: 50px;
+            border: 1px solid white;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: m-body 2s infinite 2s cubic-bezier(0.76, 0, 0.24, 1);;
+        }
+
+        .m-wheel {
+            width: 8px;
+            height: 8px;
+            background-color: white;
+            border-radius: 50%;
+
+            position: absolute;
+            top: 20%;
+            /* bottom: 20%; */
+
+            animation: m-wheel  2s infinite 2s cubic-bezier(0.76, 0, 0.24, 1);;
+        }
+
+        @keyframes m-body {
+            from {
+                opacity: 0;
+                transform: translateY(0px,0px);
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            to {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+        }
+
+        @keyframes m-wheel {
+            from {
+                opacity: 0;
+                transform: translateY(0px,0px);
+            }
+
+            50% {
+                opacity: 1;
+            }
+
+            90% {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+            to {
+                opacity: 0;
+                transform: translateY(60px);
+            }
+        }     
 
     </style>
 </head>
@@ -106,6 +210,22 @@
             <div class="re-roading"></div>
             <div class="re-roading"></div>
             <div class="re-roading"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="moving-container">
+            <div class="moving one"></div>
+            <div class="moving two"></div>
+            <div class="moving thr"></div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="m-container">
+            <div class="m-body">
+                <div class="m-wheel"></div>
+            </div>
         </div>
     </div>
 </body>
