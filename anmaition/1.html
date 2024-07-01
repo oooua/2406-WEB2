@@ -13,7 +13,7 @@
             position: relative;
         }
 
-        .animaition-container {
+        .animation-container {
             position: absolute;
             width: 40px;
             aspect-ratio: 1;
@@ -91,37 +91,26 @@
             }
         }
 
-        .one {
+
+        .moving {
             background-color: red;
             position: absolute;
-            width: 100px;
             aspect-ratio: 1;
+        }
+
+
+
+        .one {
             top: 35%;
             left: 15%;
 
             width: 50px;
             height: 200px;
             transform: translateY(-50px);
-
-            animation: one 12s infinite;
         }
 
-        @keyframes one {
-            from {
-                transform:translate(0px, 0px);
-            }
+        .two {
 
-            17% {
-                transform: translate(0px, 200px);
-            }
-
-            90% {
-                transform: translate(0px, 200px);
-            }
-
-            to {
-                transform:translate(0px, 0px);
-            }
         }
 
         .m-container {
@@ -137,19 +126,19 @@
         }
 
         .m-body {
-            height: 100px;
-            width: 50px;
-            border: 1px solid white;
+            height: 40px;
+            width: 24px;
+            border: 2px solid white;
+            border-radius: 50px;
+            transform: translate(-50%,-50%);
 
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            animation: m-body 2s infinite 2s cubic-bezier(0.76, 0, 0.24, 1);;
+            position:absolute ;
+            animation: m-body 3s infinite 3s cubic-bezier(0.76, 0, 0.24, 1);;
         }
 
         .m-wheel {
-            width: 8px;
-            height: 8px;
+            width: 4px;
+            height: 4px;
             background-color: white;
             border-radius: 50%;
 
@@ -157,7 +146,7 @@
             top: 20%;
             /* bottom: 20%; */
 
-            animation: m-wheel  2s infinite 2s cubic-bezier(0.76, 0, 0.24, 1);;
+            animation: m-wheel  3s infinite 3s cubic-bezier(0.76, 0, 0.24, 1);;
         }
 
         @keyframes m-body {
@@ -170,29 +159,30 @@
                 opacity: 1;
             }
 
+            80% {
+                opacity: 1;
+                transform: translateY(50px);
+            }
+
             to {
                 opacity: 0;
                 transform: translateY(50px);
             }
-        }
+        } 
 
         @keyframes m-wheel {
             from {
-                opacity: 0;
+
                 transform: translateY(0px,0px);
             }
 
-            50% {
-                opacity: 1;
-            }
+            80% {
 
-            90% {
-                opacity: 0;
-                transform: translateY(60px);
+                transform: translateY(20px);
             }
             to {
-                opacity: 0;
-                transform: translateY(60px);
+
+                transform: translateY(20px);
             }
         }     
 
@@ -200,7 +190,7 @@
 </head>
 <body>
     <div class="container">
-        <div class="animaition-container">
+        <div class="animation-container">
             <div class="roading"></div>
         </div>
     </div>
