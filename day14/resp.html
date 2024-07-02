@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        .반응형박스 {
+            width: 100%;
+            height: 50vh;
+            background-color: lightcoral;
+        }
+
+        @media screen and (max-width:800px) and (min-width:750px){
+            .반응형박스 {
+                background-color: red;
+            }
+        }
+
+        /* 기본작성 : PC
+        
+        @media screen and (max=width:1365) {
+            태블릿
+        }
+        
+        @media screen and (max=width:767) {
+            모바일
+        }
+
+        모바일 퍼스트 : PC
+
+        기본작성 : Mobile
+
+        @media screen and (min=width:768) {
+            태블릿
+        }
+
+        @media screen and (min=width:1366) {
+            PC
+        }
+
+        */
+
+    </style>
+</head>
+<body>
+    <div class="반응형박스"></div>
+
+</body>
+</html>

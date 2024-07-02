@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형실습</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        #my-section {
+            padding: 0 32px;
+        }
+
+        .section-container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .content {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 16px;
+        }
+
+        .imege-box {
+            width: 100%;
+            aspect-ratio: 1;
+            background-color: lightcoral;
+        }
+
+        .content-container {
+            width: 100%;
+        }
+
+        .content-container > h2 {
+            font-size: 24px;
+            font-weight: bold;
+            color: #222;
+            margin-bottom: 8px;
+        }
+
+        .content-container > .sub-title {
+            font-size: 20px;
+            font-weight: 700;
+            color: #444;
+            margin-bottom: 16px;
+        }
+
+        .content-container > .main-text {
+            color: #666;
+        }
+
+        @media screen and (max-width:767px) {
+            #my-section {
+                padding: 0 20px;
+            }
+
+            .content {
+                flex-direction: column;
+                margin-bottom: 48px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <section id="my-section">
+        <div class="section-container">
+            <div class="content">
+                <figure class="imege-box"></figure>
+                <div class="content-container">
+                    <h2 class="title">제목 영역</h2>
+                    <p class="sub-title">부제목 영역</p>
+                    <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum modi suscipit quos reprehenderit labore soluta. Explicabo velit esse accusantium dolorem consequatur quae omnis ipsum reiciendis nostrum mollitia suscipit, sunt eligendi?</p>
+                </div>
+            </div>
+            <div class="content">
+                <figure class="imege-box"></figure>
+                <div class="content-container">
+                    <h2 class="title">제목 영역</h2>
+                    <p class="sub-title">부제목 영역</p>
+                    <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum modi suscipit quos reprehenderit labore soluta. Explicabo velit esse accusantium dolorem consequatur quae omnis ipsum reiciendis nostrum mollitia suscipit, sunt eligendi?</p>
+                </div>
+            </div>
+            <div class="content">
+                <figure class="imege-box"></figure>
+                <div class="content-container">
+                    <h2 class="title">제목 영역</h2>
+                    <p class="sub-title">부제목 영역</p>
+                    <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum modi suscipit quos reprehenderit labore soluta. Explicabo velit esse accusantium dolorem consequatur quae omnis ipsum reiciendis nostrum mollitia suscipit, sunt eligendi?</p>
+                </div>
+            </div>
+            <div class="content">
+                <figure class="imege-box"></figure>
+                <div class="content-container">
+                    <h2 class="title">제목 영역</h2>
+                    <p class="sub-title">부제목 영역</p>
+                    <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum modi suscipit quos reprehenderit labore soluta. Explicabo velit esse accusantium dolorem consequatur quae omnis ipsum reiciendis nostrum mollitia suscipit, sunt eligendi?</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
