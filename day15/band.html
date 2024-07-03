@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>band</title>
+    <link rel="stylesheet" href="../reset.css">
+    <style>
+        header {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .h-container {
+            margin: 16px;
+        }
+
+        .h-container > a {
+            color: #222;
+            text-decoration: none;
+            padding: 8px 12px;
+            font-size: 12px;
+        }
+
+        .h-container > a:nth-child(2) {
+            font-weight: 500;
+        }
+
+        .h-container > a:nth-child(3) {
+            color: white;
+            font-weight: 700;
+            background-color: rgb(17, 161, 17);
+
+        }
+
+        .band-logo {
+            display: block;
+            background: url('../day15/img/spr_intro.png') no-repeat 0 -98px;
+	        width: 78px;
+	        height: 29px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a href="#" class="band-logo"></a>
+        <div class="h-container">
+            <input type="checkbox"></input>
+            <a href="가입">회원가입</a>
+            <a href="join">로그인</a>
+        </div>
+    </header>
+    
+    <setion class="mock-up">
+        <div class="nav-container">
+            <img src="../day15/img/bg_sloganImg.jpg" alt="목업" id="mockup">
+            <div class="log-in-box">
+                <h2 class="login-head">모임이 쉬워진다!<br> 우리끼리 밴드</h2>
+                <p>당신의 모임도 BAND로 시작하세요.</p>
+                <div class="login-g">로그인</div>
+                <div class="join-w">회원가입</div>
+                <div class="text-box">
+                    <p class="serch">내게 맞는 밴드를 만나려면 <a href="밴드찾기">밴드 찾기</a></p>
+                    <p class="gide">모임별 밴드 활용법 <a href="밴드가이드">밴드 가이드 보기</a></p>
+                    <p class="kids">만 13세 미만이라면? <a href="밴드키즈">'밴드키즈' 알아보기</a></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="main">
+            <div class="main-container">
+                <img src="../day15/img/bg_intro.jpg" alt="모임을 위한 공간, 밴드" id="moim">
+            </div>
+            <div class="img-box">
+                <div class="img-box1">
+                    <img src="../day15/img/img_seo01.jpg" alt="1">
+                    <h3>어떤 모임이라도!</h3>
+                    <p>친구, 가족, 동료 등 함께 하고싶은 사람과 우리만의 공간을 만들어보세요.</p>
+                </div>
+                <div class="img-box2">
+                    <img src="../day15/img/img_seo02.jpg" alt="2">
+                    <h3>모임에 딱 맞는 기능들</h3>
+                    <p>투표로 의견을 모으고, 함께 일정을 공유하며 게시판과 앨범에는 추억을 쌓아보세요.</p>
+                </div>
+                <div class="img-box3">
+                    <img src="../day15/img/img_seo03.jpg" alt="3">
+                    <h3>내가 원하는 모임 찾기</h3>
+                    <p>취미, 스포츠, 또래 모임등 나와 같은 관심사 밴드를 찾을 수 있어요.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="news-container">
+            <div class="n-header">
+                <h3>이런 밴드는 어때요</h3>
+                <a href="view-all">모두모기</a>
+            </div>
+            <div class="news-content">
+                <div class="news-content-box1">
+                    <a href="#" class="park">
+                        <img src="../day15/img/박효신.jpg" alt="효신">
+                        <a href="#">박효신 팬밴드</a>
+                        <p>가수 박효신의 팬밴드입니다. 대한민국 최고의 가창력과 영혼...</p>
+                        <p>멤버 1,086·리더 효신짱신#운영자리더</p>
+                        <button>팬밴드 밴드 더보기</button>
+                    </a>
+                    <a href="#" class="NC">
+                        <img src="../day15/img/엔씨.jpg" alt="NC">
+                        <a href="#">NC 다이노스 팬밴드</a>
+                        <p>9번째 심장 NC다이노스 팬밴드에 오신것을 환영합니다~~^^ 프...</p>
+                        <p>멤버 11,648·리더 이다겸 71/창원</p>
+                        <button>NC다이노스 밴드 더보기</button>
+                    </a>
+                    <a href="#" class="tuttle">
+                        <img src="../day15/img/거북이.jpg" alt="거부기">
+                        <a href="#">거북이 공원</a>
+                        <p>육지 거북이, 반수생 거북이를 키우시거나 관심있으신 분들 많...</p>
+                        <p>멤버 839·리더 거북이 집사</p>
+                        <button>육지 거북이 밴드 더보기</button>
+                    </a>
+                    <a href="#" class="space">
+                        <img src="../day15/img/우주.jpg" alt="우주">
+                        <a href="#">천문학,우주를 사랑하는 사람들</a>
+                        <p>천문학, 우주의 물리법칙과 정보를 함께 공유하는 밴드입니다.</p>
+                        <p>멤버 10,313·리더 공유결합^^</p>
+                        <button>천문학 밴드 더보기</button>
+                    </a>
+                    <a href="#" class="blue">
+                        <img src="../day15/img/러시안블루.jpg" alt="고앵이">
+                        <a href="#">❤러블 바라기❤</a>
+                        <p>러시안블루 집사님들만의 공간입니다</p>
+                        <p>멤버 597·리더 러블바라기 리더</p>
+                        <button>반려묘 집사 밴드 더보기</button>
+                    </a>
+                </div>
+                <div class="news-content-box2">
+                    <a href="#" class="tea">
+                        <img src="../day15/img/홍차.jpg" alt="홍차">
+                        <a href="#">홍차 이야기</a>
+                        <p>홍차 틴을 모으는것을 취미로 하는사람, 가끔은 홍차여행을...</p>
+                        <p>멤버 2,353·리더 이 인형</p>
+                        <button>홍차 밴드 더보기</button>
+                    </a>
+                    <a href="#" class="culture">
+                        <img src="../day15/img/문화역사.jpg" alt="">
+                        <a href="#">문화역사 유적지 소개</a>
+                        <p>각종 언론매체에 보도된 문화유적지 자료를 찾아서 필요하신...</p>
+                        <p>멤버 1,057·리더 이창섭/60/인천</p>
+                        <button>문화역사 밴드 더보기</button>
+                    </a>
+                    <a href="#" class="soccer">
+                        <img src="../day15/img/축구.jpg" alt="">
+                        <a href="#">대한민국 축구대표팀 팬밴드</a>
+                        <p>안녕하세요. 대한민국 국가대표팀 팬밴드입니다. 많이 많이 가...</p>
+                        <p>멤버 830·리더 양상현 대표팀 귀화 선수</p>
+                        <button>축구선수 팬밴드 밴드 더보기</button>
+                    </a>
+                    <a href="#" class="walking">
+                        <img src="../day15/img/걷기.jpg" alt="걷기">
+                        <a href="#">매일 5천보 걷기</a>
+                        <p>쉽게 하는 생활 걷기 모임 5천 보 부터 만 보 까지, 자유롭게...</p>
+                        <p>멤버 144·리더 달하루</p>
+                        <button>매일걷기 밴드 더보기</button>
+                    </a>
+                    <a href="#" class="see">
+                        <img src="../day15/img/모니터링.jpg" alt="모니터링">
+                        <a href="#">국립공원 국민 모니터링</a>
+                        <p>국립공원 생물계절 모니터링을 위한 밴드입니다.</p>
+                        <p>멤버 797·리더 국립공원연구원</p>
+                        <button></button>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="download">
+            <div class="app"></div>
+            <div class="store">
+                <button></button>
+                <button></button>
+            </div>
+        </div>
+
+        <footer>
+            <div>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+                <a href="#"></a>
+            </div>
+            BAND &COPY;2024
+        </footer>
+    </setion>
+</body>
+</html>
